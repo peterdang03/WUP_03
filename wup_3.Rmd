@@ -36,6 +36,8 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+We can see that there are "bites" on the boxes that are on the boxplot above. These bites represent the standard deviation, which is the amount of deviations amongst the data. 
+
 ## Numerical Summarys 
 
 ## Inferential Tests
