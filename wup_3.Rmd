@@ -47,6 +47,19 @@ According to the data above, we can see that the size of the box from the back g
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
 ## Conclusions
+We reject the null hypothesis, because the number is very low, the data we have is 0.000116. 
 
 
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+According to the data above, we can see that 0 is in the confidence interval only between the front and the middle. Which means that the back is different than both of them. Therefore it shows that there is no statistical difference between the front and the middle. This is the case that both of them are the same and one of them is different from the others. 
