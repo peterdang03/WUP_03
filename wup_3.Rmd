@@ -28,6 +28,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
+ The median number of drinks in the back row is larger than the median of both the front and middle row, and we can see that by looking at the boxes, according to the boxplot shown.   
   
 ### get fancy  
 
